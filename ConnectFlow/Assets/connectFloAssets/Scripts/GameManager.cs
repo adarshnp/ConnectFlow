@@ -1,7 +1,10 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,16 +27,36 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        FetchBoardData();
-    }
-
-    private void FetchBoardData()
-    {
 #if UNITY_EDITOR
-        string jsonPath = Application.streamingAssetsPath + "/PathData.json";
+        FetchBoardDataFromLocal();
 #else
-        string jsonPath = "StreamingAssets/Pathdata.json";
+        StartCoroutine(FetchBoardData());
 #endif
+    }
+    private IEnumerator FetchBoardData()
+    {
+        string url = "https://github.com/adarshnp/ConnectFlow/blob/main/ConnectFlow/Assets/StreamingAssets/Pathdata.json"; 
+
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
+        {
+            // Handle errors
+            Debug.LogError(request.error);
+        }
+        else
+        {
+            string json = request.downloadHandler.text;
+            levelData = JsonUtility.FromJson<LevelData>(json);
+            Debug.Log(json);
+        }
+
+    }
+    private void FetchBoardDataFromLocal()
+    {
+        string jsonPath = Application.streamingAssetsPath + "/PathData.json";
         string jsonStr = File.ReadAllText(jsonPath);
         levelData = JsonUtility.FromJson<LevelData>(jsonStr);
     }

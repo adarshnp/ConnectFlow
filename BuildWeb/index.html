@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | ConnectFlow</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=540 height=1080 style="width: 540px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/Build.loader.js"></script>
+    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <script src="Build/BuildWeb.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Build.data.unityweb",
-        frameworkUrl: "Build/Build.framework.js.unityweb",
-        codeUrl: "Build/Build.wasm.unityweb",
+        dataUrl: "Build/BuildWeb.data.unityweb",
+        frameworkUrl: "Build/BuildWeb.framework.js.unityweb",
+        codeUrl: "Build/BuildWeb.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Anomaly",
         productName: "ConnectFlow",
