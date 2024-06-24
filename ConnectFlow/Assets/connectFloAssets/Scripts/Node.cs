@@ -56,7 +56,6 @@ public class Node : MonoBehaviour
     {
         isMarked = true;
         parentNode = gridManager.currentParentNode;
-        //NodeColor = parentNode.NodeColor;
         parentNode.dot.UpdatePath(id);
         flow.FlowON();
         flow.Color = parentNode.dot.color;
@@ -76,7 +75,6 @@ public class Node : MonoBehaviour
                 //if  color node
                 parentNode = this;
                 gridManager.currentParentNode = this;
-                //NodeColor = parentNode.NodeColor;
 
                 //if this node or node of same color  have a path, remove its current path
                 DeletePathNode(this);
@@ -116,7 +114,6 @@ public class Node : MonoBehaviour
                         DeletePathNode(parentNode);
                         parentNode = gridManager.currentParentNode;
                         AddPathnode(rotation);
-                        //NodeColor = gridManager.currentParentNode.NodeColor;
                     }
 
                 }
@@ -184,7 +181,6 @@ public class Node : MonoBehaviour
                 rotation = -90;
             else if (dir == -1)
                 rotation = 90;
-            // rotation=(dir>0)?-90:90;//
         }
 
         else if (prevNode.col == col)
@@ -194,7 +190,6 @@ public class Node : MonoBehaviour
                 rotation = 180;
             else if (dir == -1)
                 rotation = 0;
-            // rotation = (dir > 0) ? 180 : 0;
         }
         return rotation;
     }

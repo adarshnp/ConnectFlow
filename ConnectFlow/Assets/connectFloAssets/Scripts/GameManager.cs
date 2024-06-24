@@ -29,8 +29,11 @@ public class GameManager : MonoBehaviour
 
     private void FetchBoardData()
     {
-        //string jsonPath = Application.streamingAssetsPath + "/PathData.json";
+#if UNITY_EDITOR
         string jsonPath = Application.streamingAssetsPath + "/PathData.json";
+#else
+        string jsonPath = "StreamingAssets/Pathdata.json";
+#endif
         string jsonStr = File.ReadAllText(jsonPath);
         levelData = JsonUtility.FromJson<LevelData>(jsonStr);
     }
@@ -43,8 +46,7 @@ public class GameManager : MonoBehaviour
     }
     public Color GetColor(string color)
     {
-        Color convertedColor;
-        if (ColorUtility.TryParseHtmlString(color, out convertedColor))
+        if (ColorUtility.TryParseHtmlString(color, out Color convertedColor))
         {
             return convertedColor;
         }
