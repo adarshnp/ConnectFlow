@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
         {
             string json = request.downloadHandler.text;
             levelData = JsonUtility.FromJson<LevelData>(json);
+            uiManager.GenerateLevelMenu(levelData.levelDataList.Count);
         }
 
     }
