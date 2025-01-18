@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     }
     private IEnumerator FetchBoardData()
     {
-        string url = "https://github.com/adarshnp/ConnectFlow/blob/main/ConnectFlow/Assets/StreamingAssets/Pathdata.json"; 
+        string url = "https://raw.githubusercontent.com/adarshnp/ConnectFlow/refs/heads/main/ConnectFlow/Assets/StreamingAssets/Pathdata.json"; 
 
         UnityWebRequest request = UnityWebRequest.Get(url);
 
