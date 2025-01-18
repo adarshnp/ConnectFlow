@@ -1,149 +1,149 @@
 {
-"levelDataList":[
-{
-"boardDataList":[
-    {  
-        "color": "red",
-        "dot1ID" : 8, 
-        "dot2ID" : 12
-    },  
-    {  
-        "color": "green",
-        "dot1ID" : 3, 
-        "dot2ID" : 23
-    },  
-    {  
-        "color": "blue",
-        "dot1ID" : 2, 
-        "dot2ID" : 20 
+  "levelDataList": [
+    {
+      "boardDataList": [
+        {
+          "color": "red",
+          "dot1ID": 8,
+          "dot2ID": 12
+        },
+        {
+          "color": "green",
+          "dot1ID": 3,
+          "dot2ID": 23
+        },
+        {
+          "color": "blue",
+          "dot1ID": 2,
+          "dot2ID": 20
+        },
+        {
+          "color": "Orange",
+          "dot1ID": 18,
+          "dot2ID": 22
+        },
+        {
+          "color": "Purple",
+          "dot1ID": 1,
+          "dot2ID": 15
+        }
+      ]
     },
-    {  
-        "color": "Orange",
-        "dot1ID" : 18, 
-        "dot2ID" : 22 
-    }, 
-    {  
-        "color": "Purple",
-        "dot1ID" : 1, 
-        "dot2ID" : 15
-    }
-]
-},
-{
-"boardDataList":[
-    {  
-        "color": "red",
-        "dot1ID" : 0, 
-        "dot2ID" : 21
-    },  
-    {  
-        "color": "green",
-        "dot1ID" : 2, 
-        "dot2ID" : 16
-    },  
-    {  
-        "color": "blue",
-        "dot1ID" : 7, 
-        "dot2ID" : 22
+    {
+      "boardDataList": [
+        {
+          "color": "red",
+          "dot1ID": 0,
+          "dot2ID": 21
+        },
+        {
+          "color": "green",
+          "dot1ID": 2,
+          "dot2ID": 16
+        },
+        {
+          "color": "blue",
+          "dot1ID": 7,
+          "dot2ID": 22
+        },
+        {
+          "color": "Orange",
+          "dot1ID": 9,
+          "dot2ID": 23
+        },
+        {
+          "color": "Purple",
+          "dot1ID": 4,
+          "dot2ID": 18
+        }
+      ]
     },
-    {  
-        "color": "Orange",
-        "dot1ID" : 9, 
-        "dot2ID" : 23
-    }, 
-    {  
-        "color": "Purple",
-        "dot1ID" : 4, 
-        "dot2ID" : 18
-    }
-]
-},
-{
-"boardDataList":[
-    {  
-        "color": "red",
-        "dot1ID" : 10, 
-        "dot2ID" : 23
-    },  
-    {  
-        "color": "green",
-        "dot1ID" : 0, 
-        "dot2ID" : 18
-    },  
-    {  
-        "color": "blue",
-        "dot1ID" : 13, 
-        "dot2ID" : 24 
+    {
+      "boardDataList": [
+        {
+          "color": "red",
+          "dot1ID": 10,
+          "dot2ID": 23
+        },
+        {
+          "color": "green",
+          "dot1ID": 0,
+          "dot2ID": 18
+        },
+        {
+          "color": "blue",
+          "dot1ID": 13,
+          "dot2ID": 24
+        },
+        {
+          "color": "Orange",
+          "dot1ID": 4,
+          "dot2ID": 12
+        },
+        {
+          "color": "Purple",
+          "dot1ID": 1,
+          "dot2ID": 3
+        }
+      ]
     },
-    {  
-        "color": "Orange",
-        "dot1ID" : 4, 
-        "dot2ID" : 12 
-    }, 
-    {  
-        "color": "Purple",
-        "dot1ID" : 1, 
-        "dot2ID" : 3
-    }
-]
-},
-{
-"boardDataList":[
-    {  
-        "color": "red",
-        "dot1ID" : 3, 
-        "dot2ID" : 16
-    },  
-    {  
-        "color": "green",
-        "dot1ID" : 19, 
-        "dot2ID" : 22
-    },  
-    {  
-        "color": "blue",
-        "dot1ID" : 0, 
-        "dot2ID" : 21 
+    {
+      "boardDataList": [
+        {
+          "color": "red",
+          "dot1ID": 3,
+          "dot2ID": 16
+        },
+        {
+          "color": "green",
+          "dot1ID": 19,
+          "dot2ID": 22
+        },
+        {
+          "color": "blue",
+          "dot1ID": 0,
+          "dot2ID": 21
+        },
+        {
+          "color": "Orange",
+          "dot1ID": 4,
+          "dot2ID": 17
+        },
+        {
+          "color": "Purple",
+          "dot1ID": 8,
+          "dot2ID": 12
+        }
+      ]
     },
-    {  
-        "color": "Orange",
-        "dot1ID" : 4, 
-        "dot2ID" : 17 
-    }, 
-    {  
-        "color": "Purple",
-        "dot1ID" : 8, 
-        "dot2ID" : 12
+    {
+      "boardDataList": [
+        {
+          "color": "red",
+          "dot1ID": 3,
+          "dot2ID": 10
+        },
+        {
+          "color": "green",
+          "dot1ID": 7,
+          "dot2ID": 16
+        },
+        {
+          "color": "blue",
+          "dot1ID": 4,
+          "dot2ID": 8
+        },
+        {
+          "color": "Orange",
+          "dot1ID": 15,
+          "dot2ID": 19
+        },
+        {
+          "color": "Purple",
+          "dot1ID": 18,
+          "dot2ID": 24
+        }
+      ]
     }
-]
-},
-{
-"boardDataList":[
-    {  
-        "color": "red",
-        "dot1ID" : 3, 
-        "dot2ID" : 10
-    },  
-    {  
-        "color": "green",
-        "dot1ID" : 7, 
-        "dot2ID" : 16
-    },  
-    {  
-        "color": "blue",
-        "dot1ID" : 4, 
-        "dot2ID" : 8
-    },
-    {  
-        "color": "Orange",
-        "dot1ID" : 15, 
-        "dot2ID" : 19 
-    }, 
-    {  
-        "color": "Purple",
-        "dot1ID" : 18, 
-        "dot2ID" : 24
-    }
-]
-}
-]
+  ]
 }
