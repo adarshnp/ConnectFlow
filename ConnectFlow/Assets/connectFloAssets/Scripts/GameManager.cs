@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public UnityEvent onLevelSelectionUIUpdateEvent = new UnityEvent();
 
+    public UIManager uiManager;
+
     private void Awake()
     {
         instance = this;
@@ -50,7 +52,6 @@ public class GameManager : MonoBehaviour
         {
             string json = request.downloadHandler.text;
             levelData = JsonUtility.FromJson<LevelData>(json);
-            Debug.Log(json);
         }
 
     }
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviour
         string jsonPath = Application.streamingAssetsPath + "/PathData.json";
         string jsonStr = File.ReadAllText(jsonPath);
         levelData = JsonUtility.FromJson<LevelData>(jsonStr);
+        uiManager.GenerateLevelMenu(levelData.levelDataList.Count);
     }
     public void SetLevel(int index)
     {
